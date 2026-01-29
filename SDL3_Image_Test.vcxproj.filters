@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{3da65a99-df86-4888-8546-028978a65259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\SaveData">
+      <UniqueIdentifier>{a83eaa7e-aebe-4547-b679-8a522f2d99fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\External Libs">
+      <UniqueIdentifier>{d1ccc6a3-ec3b-4ea9-99fc-bf49a009fec5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,14 +39,24 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Icon.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="IMGView_Icon.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="IMGView_Icon.ico">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="data\Null.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\savedata.txt">
+      <Filter>Resource Files\SaveData</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDL3_image.dll">
+      <Filter>Resource Files\External Libs</Filter>
+    </None>
+    <None Include="SDL3.dll">
+      <Filter>Resource Files\External Libs</Filter>
+    </None>
   </ItemGroup>
 </Project>
