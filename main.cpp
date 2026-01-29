@@ -69,14 +69,14 @@ int main(int argc, char* argv[])
 			}
 			else
 			{
-				loadImage("Null.png");
+				loadImage("data/Null.png");
 			}
 		}
 		else
 		{
 			// Switch to a new image on user input
 			SDL_Log("Switched image. Defaulting to Null.png (no functionality yet)\n");
-			loadImage("Null.png");
+			loadImage("data/Null.png");
 		}
 	} while (!exitWindow);
 
@@ -336,7 +336,7 @@ void setStartingRes()
 void tryAutoMaxWindow()
 {
 	// Find local save dir
-	std::string saveDir = getExecutableDirectory().generic_string() + "/savedata.txt";
+	std::string saveDir = getExecutableDirectory().generic_string() + "/data/savedata.txt";
 
 	// load save
 	std::ifstream saveFile(saveDir);
@@ -362,7 +362,7 @@ void tryAutoMaxWindow()
 void saveMaximizedState()
 {
 	// Find local save dir
-	std::string saveDir = getExecutableDirectory().generic_string() + "/savedata.txt";
+	std::string saveDir = getExecutableDirectory().generic_string() + "/data/savedata.txt";
 
 	// Try save file to local dir
 	std::ofstream saveFile(saveDir);
