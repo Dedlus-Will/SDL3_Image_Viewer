@@ -356,6 +356,8 @@ void tryAutoMaxWindow()
 	{
 		SDL_Log("Did NOT auto-maximize window.\n");
 	}
+
+	return;
 }
 
 // Set maximized from savedata.txt
@@ -372,6 +374,8 @@ void saveMaximizedState()
 		std::cout << "Saved file!\n";
 		saveFile << maximized;
 	}
+
+	return;
 }
 
 // Get the parent path of the programs executable
@@ -393,4 +397,6 @@ std::filesystem::path getExecutableDirectory()
 void tryLogError()
 {
 	SDL_Log(SDL_GetError());
+
+	return;
 }
